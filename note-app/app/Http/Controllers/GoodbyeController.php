@@ -4,13 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-
-class Goodbye extends Controller
+class GoodbyeController extends Controller
 {
-
+    
     public function goodbye()
     {
         return view('goodbye');
     }
 }
-
