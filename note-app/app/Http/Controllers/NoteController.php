@@ -20,7 +20,7 @@ class NoteController extends Controller
      */
     public function create()
     {
-        return view('nore.create');
+        return view('note.create');
     }
 
     /**
@@ -36,7 +36,7 @@ class NoteController extends Controller
      */
     public function show(Note $note)
     {
-        return view('nore.show');
+        return view('note.show');
     }
 
     /**
@@ -44,7 +44,7 @@ class NoteController extends Controller
      */
     public function edit(Note $note)
     {
-        return view('nore.edit');
+        return view('note.edit');
     }
 
     /**
