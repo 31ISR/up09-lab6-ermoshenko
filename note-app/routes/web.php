@@ -23,4 +23,4 @@ Route::get(uri: '/todo/{id}/edit', action: [TodoController::class, 'edit'])->nam
 Route::put(uri: '/todo{id}', action: [TodoController::class, 'update'])->name('todo.update');
 Route::delete(uri: '/todo/{id}', action: [TodoController::class, 'destroy'])->name('todo.destroy');*/
 Route::resource('note', NoteController::class);
-Route::resource('todo', TodoControllerController::class);
+Route::resource('todo', TodoController::class);
