@@ -6,7 +6,7 @@ use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\NoteController;
 use App\Http\Controllers\TodoController;
 
-Route::get('/', [WelcomeController::class, 'welcome'])->name('welcome');
+/*Route::get('/', [WelcomeController::class, 'welcome'])->name('welcome');
 Route::get('/goodbye', [GoodbyeController::class, 'goodbye'])->name('goodbye');
 Route::get('/note', [NoteController::class, 'index'])->name('note.index');
 Route::get('/note/create', [NoteController::class, 'create'])->name('note.create');
@@ -21,4 +21,6 @@ Route::post(uri: '/todo', action: [TodoController::class, 'store'])->name('todo.
 Route::get(uri: '/todo/{id}', action: [TodoController::class, 'show'])->name('todo.show');
 Route::get(uri: '/todo/{id}/edit', action: [TodoController::class, 'edit'])->name('todo.edit');
 Route::put(uri: '/todo{id}', action: [TodoController::class, 'update'])->name('todo.update');
-Route::delete(uri: '/todo/{id}', action: [TodoController::class, 'destroy'])->name('todo.destroy');
+Route::delete(uri: '/todo/{id}', action: [TodoController::class, 'destroy'])->name('todo.destroy');*/
+Route::resource('note', NoteController::class);
+Route::resource('todo', TodoControllerController::class);
